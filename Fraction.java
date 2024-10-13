@@ -2,20 +2,32 @@ public class Fraction {
     private int numérateur;
     private int dénominateur;
 
-    // Constructeur avec numérateur et dénominateur
+
     public Fraction(int numérateur, int dénominateur) {
         this.numérateur = numérateur;
         this.dénominateur = dénominateur;
     }
 
-    // Constructeur avec juste le numérateur (dénominateur = 1)
+    public static final Fraction ZERO = new Fraction(0, 1);
+    public static final Fraction UN = new Fraction(1, 1);
+
+    
     public Fraction(int numérateur) {
         this(numérateur, 1);
     }
 
-    // Constructeur sans argument (numérateur = 0, dénominateur = 1)
+  
     public Fraction() {
         this(0, 1);
+    }
+
+    public int getNumérateur() {
+        return numérateur;
+    }
+
+
+    public int getDénominateur() {
+        return dénominateur;
     }
     
     @Override
