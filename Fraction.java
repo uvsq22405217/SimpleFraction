@@ -29,6 +29,10 @@ public class Fraction {
     public int getDénominateur() {
         return dénominateur;
     }
+
+    public double doubleValue() {
+        return (double) numérateur / dénominateur;
+    }
     
     @Override
     public String toString() {
